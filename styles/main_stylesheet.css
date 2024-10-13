@@ -1,7 +1,7 @@
 :root {
     --yellow-light: #fbba44;
     --yellow-dark: #f49848;
-    --pink-light: #e83580;
+    --pink-light: #EB3E92;
     --pink-dark: #ca3480;
     --dark-text: #0a090e;
 }
@@ -67,16 +67,27 @@ body {
     height:100vh;
 }
 
+.team.slide {
+    height:100%;
+}
+
 .link-icon {
     margin-top: 50px;
     width: 60px;
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .link-icon:hover {
     transform: scale(1.1);
     box-shadow: 15px 0 50px var(--yellow-light), -20px 0 50px var(--pink-light);
+}
+
+.link-icon.mini {
+    margin: 0;
+    width: 30px;
+    border-radius: 50%;
+    transition: 0.3s ease;
 }
 
 .main-page {
@@ -137,9 +148,152 @@ body {
     border-radius: 50px;
 }
 
+.container-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .slide-title {
     font-size: 60px;
     font-weight: 800;
     position: relative;
     left: 120px;
 }
+
+.team-members {
+    max-width: 1500px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    align-items: center;
+    width: 400px;
+    height: 350px;
+    background: linear-gradient(180deg, var(--yellow-light) 0%, rgba(251, 186, 68, 0) 100%);
+}
+
+.team-card.variant {
+    background: linear-gradient(180deg, var(--pink-light) 0%, rgba(232, 53, 128, 0) 100%);
+}
+
+.profile-pic {
+    margin-top: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.team-name {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.team-description {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.games-showcase {
+    max-width: 2500px;
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.big-game-showcase {
+    width: 40%;
+    border-radius: 50px;
+    background: linear-gradient(180deg, var(--pink-light) 0%, rgba(232, 53, 128, 0) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 50px;
+}
+
+.other-games-showcase {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.game-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #A691E0 100%);
+}
+
+.game-logo {
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.game-link {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-left: 40px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.game-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px white;
+}
+
+.game-info {
+    width:60%;
+    height: 100%;
+}
+
+.game-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.game-title.big {
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.game-description {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+iframe {
+    margin-top: 0;
+}
+
+
+
+
+
+
