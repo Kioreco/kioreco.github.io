@@ -16,19 +16,25 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+        <!-- font: Lexend
+        ================================================== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav class="nav-bar">
             <ul>
-                <li><a href="#team"><img class="team-icon" src="assets/navbar/NavBar_Team.png" alt="Icon of Kioreco" loading="eager"></a></li>
-                <li><a href="#games"><img class="games-icon" src="assets/navbar/NavBar_Games.png" alt="Icon of a game controller" loading="eager"></a></li>
-                <li><a href=""><img class="contact-icon" src="assets/navbar/NavBar_Contact.png" alt="Icon of a contact" loading="eager"></a></li>
+                <li><a href="#main"><img class="team-icon" src="assets/navbar/NavBar_Main.png" alt="Icon of Kioreco" loading="eager"></a></li>
+                <li><a href="#team"><img class="games-icon" src="assets/navbar/NavBar_Team.png" alt="Icon of a game controller" loading="eager"></a></li>
+                <li><a href="#games"><img class="contact-icon" src="assets/navbar/NavBar_Games.png" alt="Icon of a contact" loading="eager"></a></li>
             </ul>
             <img class="nav-bar-background" src="assets/navbar/Web_NavBar_Background.png" loading="eager" alt="">
         </nav>
         <div class="container">
             <img src="assets/Web_Background.png" alt="Background" class="background-image" loading="eager">
-            <section class="main-page slide">
+            <section class="main-page slide" id="main">
                 <div class="main-page-content">
                     <div class="kioreco-details">
                         <img src="assets/Logo_Kioreco.png" alt="Logo Kioreco with Slogan: Ligthing up screens across worlds" class="logo-big" loading="eager">
@@ -51,37 +57,37 @@
                         <div class="team-card variant">
                             <img src="assets/profile_pics/Pablo.png" alt="Drawing of Paula, the programmer, with her dog Lia" class="profile-pic" loading="lazy">
                             <h2 class="team-name">Pablo García Núñez</h2>
-                            <p class="team-description">Loco</p>
-                            <a href="" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
+                            <p class="team-description">UX/UI Programmer, Narrative, 3D Artist</p>
+                            <a href="https://pablowht.github.io" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
                         </div>
                         <div class="team-card">
                             <img src="assets/profile_pics/Paula.png" alt="Drawing of Paula, the programmer, with her dog Lia" class="profile-pic" loading="lazy">
                             <h2 class="team-name">Paula Peralbo Avilés</h2>
-                            <p class="team-description">Programa drogada</p>
+                            <p class="team-description">Programmer, AI and Gameplay</p>
                             <a href="" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
                         </div>
                         <div class="team-card variant">
                             <img src="assets/profile_pics/Raul.png" alt="Drawing of Paula, the programmer, with her dog Lia" class="profile-pic" loading="lazy">
                             <h2 class="team-name">Raúl Somavilla González</h2>
-                            <p class="team-description">Salta a la comba</p>
+                            <p class="team-description">Character Designer and 3D Artist</p>
                             <a href="" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
                         </div>
                         <div class="team-card">
                             <img src="assets/profile_pics/Laura.png" alt="Drawing of Paula, the programmer, with her dog Lia" class="profile-pic" loading="lazy">
                             <h2 class="team-name">Laura Méndez García-Brioles</h2>
-                            <p class="team-description">Canta sevillanas</p>
+                            <p class="team-description">Concept Artist, 2D and 3D Artist</p>
                             <a href="" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
                         </div>
                         <div class="team-card variant">
                             <img src="assets/profile_pics/Prior.png" alt="Drawing of Paula, the programmer, with her dog Lia" class="profile-pic" loading="lazy">
                             <h2 class="team-name">Pablo Prior Molina</h2>
-                            <p class="team-description">Mira por la ventana</p>
+                            <p class="team-description">Back-End Programmer</p>
                             <a href="" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
                         </div>
                         <div class="team-card">
                             <img src="assets/profile_pics/Nestor.png" alt="Drawing of Paula, the programmer, with her dog Lia" class="profile-pic" loading="lazy">
                             <h2 class="team-name">Néstor Bermejillo González</h2>
-                            <p class="team-description">Hace escalada</p>
+                            <p class="team-description">3D Artist, Environments</p>
                             <a href="" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
                         </div>
                     </div>
@@ -94,12 +100,7 @@
                 <div class="games-showcase">
                     <div class="big-game-showcase">
                         <h2 class="game-title big">The Shop Next Door</h2>
-                        <iframe width="700" height="400"
-                                src="https://youtu.be/UUf_8Xu6-wQ?si=2rTxkBMOLzK2ry8t"
-                                title="The Shop Next Door - Trailer"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen>
-                        </iframe>
+                        <iframe width="580" height="335" src="https://www.youtube.com/embed/UUf_8Xu6-wQ?si=wo11SXxZ1imVQTDv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <a href="https://pablowht.itch.io/decor-dilemma" target="_blank"><img src="assets/games/KioreBTHEK_raton.png" alt="Botón que redirige a la página de Itch.io de Hasta que la noche nos separe"
                                                                                               class="game-link"></a>
                     </div>
