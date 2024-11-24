@@ -415,6 +415,129 @@ section.games{
 }
 
 
+/* The Modal */
+.game-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background: linear-gradient(90deg, rgba(251, 176, 41, 0.55) 0%, rgba(251, 194, 91, 0.55) 25%, rgba(247, 105, 164, 0.55) 75%, rgba(249, 36, 125, 0.55) 100%);
+    transition: ease-in-out 1s;
+}
 
+/* Modal Content/Box */
+.game-modal-content {
+    background-color: white;
+    border-radius: 30px;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
+    animation-name: animatetop;
+    animation-duration: 0.75s;
+    text-align: center;
+}
 
+@keyframes animatetop {
+    from {top: -300px; opacity: 0; scale: 0.5}
+    to {top: 0; opacity: 1; scale: 1}
+}
 
+/* The Close Button */
+.close {
+    color: var(--pink-light);
+    padding-right: 20px;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    scale: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-button {
+    cursor:pointer;
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FBB029 0%, #FBC25B 25%, #F769A4 75%, #F9247D 100%);
+    border-radius: 30px;
+    padding: 5px 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.modal-button:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 0 20px var(--pink-light), -10px 0 20px var(--yellow-light);
+}
+
+.columns-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.game-logo-image {
+    min-height: 200px;
+    max-height: 350px;
+}
+
+.lateral-info {
+    padding: 0 40px;
+    width: 60%;
+}
+
+.lateral-images {
+    margin-top: 10px;
+    width: 40%;
+}
+
+.image-side {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.header-title {
+    margin: 0;
+    font-weight: 1000;
+    font-size: 40px;
+    text-align: center;
+    color: var(--pink-dark);
+}
+
+.info-text {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.info-text.center {
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    background-color: black;
+    border-radius: 50px;
+}
+
+.info-text strong{
+    color: #ca3480;
+    font-weight: 800;
+
+}
+
+.info-text strong.yellow {
+    color: var(--yellow-dark);
+}
+
+.small-details.center {
+    height: 50px;
+}
+
+.small-details {
+    height: 30px;
+}
