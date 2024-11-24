@@ -541,3 +541,20 @@ section.games{
 .small-details {
     height: 30px;
 }
+
+.tutorial-images {
+    max-width: 100%;
+    margin: -10px;
+}
+
+.itchio-game {
+    margin: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.itchio-game:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+    box-shadow: 10px 0 20px var(--pink-light), -10px 0 20px var(--yellow-light);
+}
