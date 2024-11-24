@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" xmlns="http://www.w3.org/1999/html">
     <head>
         <!-- page bases
         ================================================== -->
@@ -83,7 +83,7 @@
                             <img src="assets/profile_pics/Prior.png" alt="Drawing of Paula, the programmer, with her dog Lia" class="profile-pic" loading="lazy">
                             <h2 class="team-name">Pablo Prior Molina</h2>
                             <p class="team-description">Back-End Programmer</p>
-                            <a href="https://www.instagram.com/pablo_prior/" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
+                            <a href="https://pabloprior.github.io/" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Icon of a Link" class="link-icon mini"></a>
                         </div>
                         <div class="team-card">
                             <img src="assets/profile_pics/Nestor.png" alt="Drawing of Paula, the programmer, with her dog Lia" class="profile-pic" loading="lazy">
@@ -106,8 +106,8 @@
                                 two sisters will have to fight to find a good <b>balance between
                                 life and work</b> to win the <b>inheritance</b> of their mother</p>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/fKp3ifV1xc8?si=9FC5h-ckiOTMzimL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <a href="https://kioreco.itch.io/the-shop-next-door" target="_blank"><img src="assets/icons/Link%20Icon.png" alt="Botón"
-                                                                                                      class="game-link"></a>
+                            <a href="https://kioreco.itch.io/the-shop-next-door" target="_blank"><img src="assets/icons/itchio.png" alt="Botón" class="game-link"></a>
+                            <a id="modal-button" class="modal-button">Read more!</a>
                         </div>
                         <div class="other-games-showcase">
                             <div class="game-content">
@@ -148,9 +148,79 @@
                     <a href="mailto:kiore.coo@gmail.com" target="_blank"><img src="assets/icons/email.png" alt="Botón Correo" class="link-icon"></a>
                 </div>
             </section>
+            <div id="game-modal" class="game-modal">
+                <div class="game-modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-info">
+                        <img src="/assets/games/TheShopNextDoor/Logo-The-Shop-Next-Door.png" alt="Logo The Shop Next Door" class="game-logo-image">
+                        <div class="columns-info">
+                            <div class="lateral-images">
+                                <img src="/assets/games/TheShopNextDoor/Ingame.png" alt="Juego ingame" class="image-side">
+                                <img src="/assets/games/TheShopNextDoor/Calendario.png" alt="Juego calendario" class="image-side">
+                            </div>
+                            <div class="lateral-info">
+                                <h1 class="header-title"><img src="/assets/games/TheShopNextDoor/Corazones.png" alt="Corazoncitos" class="small-details"> A Family Business <img src="/assets/games/TheShopNextDoor/Corazones.png" alt="Corazoncitos" class="small-details"></h1>
+                                <p class="info-text center"><strong>Gemma & Emma</strong>, <strong class="yellow">Emma & Gemma</strong></p>
+                                <p class="info-text">They are <strong>sisters</strong> and they... well, <strong class="yellow">they don't get along</strong>. One takes everything <strong>seriously</strong>. The other one <strong class="yellow">couldn't care less</strong>.
+                                    They come from the <strong>same mother</strong> and maybe <strong class="yellow">that's the problem</strong>.</p>
+
+                                <p class="info-text center"><strong>Telma</strong>, <strong class="yellow">The Mother</strong></p>
+                                <p class="info-text">The one that <strong>gave name</strong> to both girls. Maybe that was also the <strong class="yellow">mistake</strong> she made.
+                                    <strong>You can't make your daughters</strong>. She ended making a <strong class="yellow">rebellion</strong> of a <strong>careless mother's careful daughters</strong>.</p>
+
+                                <p class="info-text center"><strong>The Shop</strong><strong class="yellow">(s)</strong></p>
+                                <p class="info-text">Telma had a shop, a <strong><i>really</i> big shop</strong>. But she was <strong class="yellow">growing old</strong>, and with her absent husband <strong>long gone...</strong>
+                                    She <strong class="yellow">built a wall</strong> and gave a <strong>key</strong> to each of their daughters.
+                                    From now on, The Daughters would have to run their own shop and <strong class="yellow">make their mum proud</strong>.
+                                    But that's not all, because <strong>they have a life</strong>, and <strong class="yellow">they also have to run it</strong>.</p>
+
+                                <p class="info-text">Because in the end...</p>
+                                <p class="info-text center"><strong>The Shop Next Door</strong>, <strong class="yellow">is run by my sister</strong></p>
+                                <img src="/assets/games/TheShopNextDoor/Corazones.png" alt="Corazoncitos" class="small-details center">
+                                <h1 class="header-title">How To Play</h1>
+                            </div>
+                        </div>
+
+
+
+
+                        <p>How to play</p>
+                        <p>images</p>
+                        <!--<iframe frameborder="0" src="https://itch.io/embed-upload/12021407?color=ffffff" allowfullscreen="allowfullscreen" width="960" height="540"><a href="https://kioreco.itch.io/the-shop-next-door">Play The Shop Next Door on itch.io</a></iframe>!-->
+                    </div>
+                </div>
+            </div>
             <footer>
                 <p>© Pablo Whitewood 2024 – All rights reserved</p>
             </footer>
         </div>
     </body>
 </html>
+<script>
+    // Get the modal
+    var modal = document.getElementById("game-modal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("modal-button");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>
