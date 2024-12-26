@@ -558,3 +558,34 @@ section.games{
     transform: scale(1.4);
     box-shadow: 10px 0 20px var(--pink-light), -10px 0 20px var(--yellow-light);
 }
+
+@media (max-width: 1400px) {
+    .game-modal-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .game-modal-content {
+        width: 90%;
+    }
+
+    .game-logo-image {
+        height: 100px;
+    }
+    .columns-info {
+        flex-direction: column;
+    }
+    .lateral-images {
+        width: 100%;
+    }
+    .lateral-info {
+        width: 100%;
+    }
+    .info-text, .info-text.center, .header-title {
+        font-size: 15px;
+    }
+    .small-details {
+        height: 15px;
+    }
+}
